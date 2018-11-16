@@ -1,0 +1,5 @@
+D:\Project data\TengLi\MaterielSys\MaterileEntity\bin\Debug\MaterileEntity.dll
+D:\Project data\TengLi\MaterielSys\MaterileEntity\bin\Debug\MaterileEntity.pdb
+D:\Project data\TengLi\MaterielSys\MaterileEntity\obj\Debug\MaterileEntity.csprojResolveAssemblyReference.cache
+D:\Project data\TengLi\MaterielSys\MaterileEntity\obj\Debug\MaterileEntity.dll
+D:\Project data\TengLi\MaterielSys\MaterileEntity\obj\Debug\MaterileEntity.pdb

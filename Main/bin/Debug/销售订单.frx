@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/20/2017 16:20:31" ReportInfo.Modified="07/21/2017 10:53:06" ReportInfo.CreatorVersion="2013.2.5.0">
+  <Dictionary>
+    <OleDbDataConnection Name="Connection" ConnectionString="rijcmlqVzFGsc+BVENiWJhr/EarGmpXzxTZgUAjISq3RkDjjM5ZdA0Eie6dOX00uEjsgFbs2P21LCiEodm4mXhqbVVd2+NHmgBNATe/lpCdduLYhuCeuKilrVJjwA2PcM0wVc2UINCwc9gSmZOpxj4wVxthlw==">
+      <TableDataSource Name="dbo_TENPDA" DataType="System.Int32" Enabled="true" TableName="dbo.&quot;TENPDA&quot;">
+        <Column Name="idx" DataType="System.Int32"/>
+        <Column Name="PDA001" DataType="System.String"/>
+        <Column Name="PDA002" DataType="System.String"/>
+        <Column Name="PDA003" DataType="System.String"/>
+        <Column Name="PDA004" DataType="System.Int32"/>
+        <Column Name="PDA005" DataType="System.String"/>
+        <Column Name="PDA006" DataType="System.Decimal"/>
+        <Column Name="PDA007" DataType="System.String"/>
+        <Column Name="PDA008" DataType="System.Decimal"/>
+        <Column Name="PDA009" DataType="System.Decimal"/>
+        <Column Name="PDA010" DataType="System.Decimal"/>
+        <Column Name="PDA011" DataType="System.String"/>
+        <Column Name="PDA012" DataType="System.Decimal"/>
+        <Column Name="PDA013" DataType="System.Decimal"/>
+        <Column Name="PDA014" DataType="System.Decimal"/>
+        <Column Name="PDA015" DataType="System.Int32"/>
+        <Column Name="PDA016" DataType="System.String"/>
+        <Column Name="PDA017" DataType="System.Decimal"/>
+        <Column Name="PDA018" DataType="System.String"/>
+        <Column Name="PDA019" DataType="System.String"/>
+        <Column Name="PDA020" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="dbo_TENPDU" DataType="System.Int32" Enabled="true" TableName="dbo.&quot;TENPDU&quot;">
+        <Column Name="idx" DataType="System.Int32"/>
+        <Column Name="PDU001" DataType="System.String"/>
+        <Column Name="PDU002" DataType="System.String"/>
+        <Column Name="PDU003" DataType="System.String"/>
+        <Column Name="PDU004" DataType="System.String"/>
+        <Column Name="PDU005" DataType="System.String"/>
+        <Column Name="PDU006" DataType="System.String"/>
+        <Column Name="PDU007" DataType="System.String"/>
+        <Column Name="PDU008" DataType="System.String"/>
+        <Column Name="PDU009" DataType="System.String"/>
+        <Column Name="PDU010" DataType="System.String"/>
+        <Column Name="PDU011" DataType="System.String"/>
+        <Column Name="PDU012" DataType="System.String"/>
+        <Column Name="PDU013" DataType="System.String"/>
+        <Column Name="PDU014" DataType="System.String"/>
+        <Column Name="PDU015" DataType="System.String"/>
+        <Column Name="PDU016" DataType="System.String"/>
+        <Column Name="PDU017" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU018" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU019" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU020" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU021" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU022" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU023" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU024" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU025" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU026" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU027" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU028" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU029" Enabled="false" DataType="System.String"/>
+        <Column Name="PDU030" Enabled="false" DataType="System.String"/>
+      </TableDataSource>
+    </OleDbDataConnection>
+    <Total Name="TotalOne" Expression="[dbo_TENPDA.PDA004]" Evaluator="Data1"/>
+    <Total Name="TotalTwo" Expression="[dbo_TENPDA.PDA004]*[dbo_TENPDA.PDA006]" Evaluator="Data1"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="151.2">
+      <TextObject Name="Text6" Width="718.2" Height="37.8" Text="销售订单" HorzAlign="Center" VertAlign="Center" Font="宋体, 18pt"/>
+      <TextObject Name="Text1" Top="56.7" Width="85.05" Height="37.8" Text="合同编号：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text2" Left="85.05" Top="56.7" Width="207.9" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU001]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text3" Left="292.95" Top="56.7" Width="103.95" Height="37.8" Text="客人合同号：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text4" Left="396.9" Top="56.7" Width="141.75" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU002]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text5" Left="538.65" Top="56.7" Width="56.7" Height="37.8" Text="日期：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text7" Left="595.35" Top="56.7" Width="122.85" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU016]" Format="Date" Format.Format="d" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text8" Top="103.95" Width="85.05" Height="37.8" Text="客人编号：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text9" Left="85.05" Top="103.95" Width="207.9" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU003]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text10" Left="292.95" Top="103.95" Width="103.95" Height="37.8" Text="目的港口：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text11" Left="396.9" Top="103.95" Width="141.75" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU004]" VertAlign="Bottom" Font="宋体, 11pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="155.2" Width="718.2" Height="28.35">
+      <TextObject Name="Text13" Width="75.6" Height="28.35" Border.Lines="All" Text="品号" HorzAlign="Center" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text14" Left="75.6" Width="122.85" Height="28.35" Border.Lines="All" Text="品名" HorzAlign="Center" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text15" Left="198.45" Width="151.2" Height="28.35" Border.Lines="All" Text="规格" HorzAlign="Center" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text16" Left="434.7" Width="94.5" Height="28.35" Border.Lines="All" Text="数量" HorzAlign="Center" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text17" Left="349.65" Width="85.05" Height="28.35" Border.Lines="All" Text="单位" HorzAlign="Center" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text18" Left="529.2" Width="85.05" Height="28.35" Border.Lines="All" Text="单价（元）" HorzAlign="Center" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text19" Left="614.25" Width="103.95" Height="28.35" Border.Lines="All" Text="金额（元）" HorzAlign="Center" VertAlign="Bottom" Font="宋体, 11pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="187.55" Width="718.2" Height="103.95" CanBreak="true" DataSource="dbo_TENPDA">
+      <TextObject Name="Text43" Width="75.6" Height="103.95" Border.Lines="All" Text="[dbo_TENPDA.PDA002]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text44" Left="75.6" Width="122.85" Height="103.95" Border.Lines="All" Text="[dbo_TENPDA.PDA003]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text45" Left="198.45" Width="151.2" Height="103.95" Border.Lines="All" Text="[dbo_TENPDA.PDA016]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text46" Left="434.7" Width="94.5" Height="103.95" Border.Lines="All" Text="[dbo_TENPDA.PDA004]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text47" Left="349.65" Width="85.05" Height="103.95" Border.Lines="All" Text="[dbo_TENPDA.PDA005]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text48" Left="529.2" Width="85.05" Height="103.95" Border.Lines="All" Text="[dbo_TENPDA.PDA006]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text49" Left="614.25" Width="103.95" Height="103.95" Border.Lines="All" Text="[[dbo_TENPDA.PDA004]*[dbo_TENPDA.PDA006]]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+    </DataBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="295.5" Width="718.2" Height="245.7">
+      <TextObject Name="Text52" Width="434.7" Height="28.35" Border.Lines="All" Text="合               计：" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text53" Left="434.7" Width="132.3" Height="28.35" Border.Lines="All" Text="数量：[TotalOne]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text56" Left="567" Width="151.2" Height="28.35" Border.Lines="All" Text="金额：[TotalTwo]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+      <TextObject Name="Text12" Left="9.45" Top="28.35" Width="94.5" Height="28.35" Text="备注参数：" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text20" Left="170.1" Top="28.35" Width="151.2" Height="28.35" Text="需方（订货单位）：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text21" Left="444.15" Top="28.35" Width="151.2" Height="28.35" Text="供方（供货单位）：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text42" Left="9.45" Top="56.7" Width="160.65" Height="189" Text="[dbo_TENPDU.PDU005]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text22" Left="189" Top="56.7" Width="94.5" Height="37.8" Text="需方单位：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text27" Left="283.5" Top="56.7" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU006]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text32" Left="463.05" Top="56.7" Width="94.5" Height="37.8" Text="供方单位：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text37" Left="557.55" Top="56.7" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU011]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text23" Left="189" Top="94.5" Width="94.5" Height="37.8" Text="负责人：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text28" Left="283.5" Top="94.5" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU007]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text33" Left="463.05" Top="94.5" Width="94.5" Height="37.8" Text="负责人：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text38" Left="557.55" Top="94.5" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU012]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text24" Left="189" Top="132.3" Width="94.5" Height="37.8" Text="通讯地址：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text29" Left="283.5" Top="132.3" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU008]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text34" Left="463.05" Top="132.3" Width="94.5" Height="37.8" Text="通讯地址：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text39" Left="557.55" Top="132.3" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU013]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text25" Left="189" Top="170.1" Width="94.5" Height="37.8" Text="电话：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text30" Left="283.5" Top="170.1" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU009]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text35" Left="463.05" Top="170.1" Width="94.5" Height="37.8" Text="电话：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text40" Left="557.55" Top="170.1" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU014]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text26" Left="189" Top="207.9" Width="94.5" Height="37.8" Text="传真：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text31" Left="283.5" Top="207.9" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU010]" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text36" Left="463.05" Top="207.9" Width="94.5" Height="37.8" Text="传真：" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 11pt"/>
+      <TextObject Name="Text41" Left="557.55" Top="207.9" Width="160.65" Height="37.8" Border.Lines="Bottom" Text="[dbo_TENPDU.PDU015]" VertAlign="Bottom" Font="宋体, 11pt"/>
+    </ReportSummaryBand>
+  </ReportPage>
+</Report>
